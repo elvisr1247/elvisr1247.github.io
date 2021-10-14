@@ -124,9 +124,9 @@ in media queries! Intead,1 rem = 1em = 16px*/
 /*************************/
 
 @media(max-width:44em) {
-    header{
+    /* header{
         padding: 0 2rem;
-    }
+    } */
     .heading-secondary{
         margin-bottom: 4.8rem;
 
