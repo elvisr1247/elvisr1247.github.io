@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb:hover {
 /*************************/
 /* Header SECTION START*/
 /*************************/
-header{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,11 +139,11 @@ header{
     position: relative;
 }
 /* navigation bar */
-header h1{
+.header h1{
    height: 2.2rem;
    color:#1a4473;
 }
-header span{
+.header span{
     color: #ffffff;
 }
 /* main nav */
