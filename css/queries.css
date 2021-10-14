@@ -168,7 +168,7 @@ in media queries! Intead,1 rem = 1em = 16px*/
 /*************************/
 @media(max-width:34em){
     header{
-        padding: 0 1.6rem;
+        padding: 0 4rem;
     }
     .grid{
         row-gap: 4.8rem;
