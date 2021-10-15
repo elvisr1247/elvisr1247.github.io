@@ -1,4 +1,3 @@
-console.log("HELLO WORLD")
 /////////////////////////////////////////////////////////////////
 //Make mobile navigation work
 
@@ -9,6 +8,33 @@ const headerEl = document.querySelector('.header');
 btnNav.addEventListener('click',function(){
     headerEl.classList.toggle('nav--open')
 });
+/////////////////////////////////////////////////////////////////
+// //Smooth scrolling animation
+// const allLinks = document.querySelectorAll('a:link');
+// // console.log(allLinks);
+
+// allLinks.forEach(function(link){
+//     link.addEventListener('click',function(e){
+//         e.preventDefault();
+//         const href = link.getAttribute('href');
+//         // console.log(href);
+
+
+
+
+//         //Scroll back to top if href = #
+//         if(href === "#")
+//          window.scrollTo({
+//             top:0,
+//             behavior: "smooth",
+//         });
+//         //for everyother href
+//         if(href !=="#" && href.startsWith('#'))console.log(href)
+            
+//     });
+// });
+
+
 /////////////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing is some Safari version
 

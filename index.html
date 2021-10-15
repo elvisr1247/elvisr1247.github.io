@@ -24,6 +24,12 @@
     <!-- java script -->
     <script defer src="js/script.js"></script>
     <!-- java script -->
+    <!-- Makes smooth scrolling for every browser -->
+    <!-- <script defer src=" https://unpkg.com/
+    smoothscroll-polyfill@0.4.4/dist/
+    smoothscroll.min.js">
+    </script> -->
+    <!-- Makes smooth scrolling for every browser -->
     <title>E.R.</title>
 </head>
 <body>
@@ -31,9 +37,9 @@
        <h1>Elvis <span>Rodriguez</span></h1>
        <nav class="main-nav">
            <ul class="main-nav-list">
-               <li><a class="main-nav-link" href="#">Home</a></li>
+               <li><a class="main-nav-link" href="#Home">Home</a></li>
                <li><a class="main-nav-link" href="#">About</a></li>
-               <li><a class="main-nav-link" href="#">Contact</a></li>
+               <li><a class="main-nav-link" href="#contact--btn">Contact</a></li>
            </ul>
        </nav>
        <button class="btn-mobile-nav">
@@ -43,7 +49,7 @@
     </header>
     <main>
         <!-- start section -->
-        <section class="section-start">
+        <section class="section-start" id="Home">
             <div class="start">
                 <div class="start-text">
                     <!-- <div>
@@ -127,8 +133,8 @@
             </div>
         </section>
         <!-- portfolio section -->
-        <!-- about me section -->
-        <section class="section-cta">
+        <!-- contact me section -->
+        <section class="section-cta" id="contact--btn">
             <div class="container cta">
                 <h4 class="heading-fourth">Contact Me</h4>
             </div>
@@ -164,6 +170,7 @@
            
             </div>
         </section>
+         <!-- contact me section -->
     </main>
     
     <!-- end section -->

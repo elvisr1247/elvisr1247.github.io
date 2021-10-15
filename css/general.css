@@ -41,6 +41,7 @@ Default:1
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
   
 html {
@@ -49,6 +50,9 @@ html {
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
     overflow-x:hidden;
+    /* makes scrolling smooth when button is pressed 
+    Dost not work on safari */
+    scroll-behavior: smooth;
 }
   
 body {
