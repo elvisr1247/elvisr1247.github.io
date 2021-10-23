@@ -141,38 +141,56 @@
                 <h4 class="heading-fourth">Contact Me</h4>
             </div>
             <div>
-                <!-- https://formsubmit.co/your@email.com
-                used to send emails to me -->
-                <form class="cta-form" action="https://formsubmit.co/elreyra7@gmail.com" method="post">
-                    <input type="hidden" name="_captcha" value="false">
-                    <!-- <div> -->
-                      <label for="full-name">Full Name</label>
-                      <input id="full-name" type="text" name="Name" placeholder="John Smith" 
-                      required>
-                    <!-- </div> -->
-                  
-                    <!-- <div> -->
-                      <label for="subject">Subject</label>
-                    <input id="subject" type="text" name="subject" placeholder="Subject"
-                    required>
-                    <!-- </div> -->
-                    
-                    <!-- <div> -->
-                      <label for="email">Email address</label>
+               
+                <form class="cta-form" action="https://formspree.io/f/mpzkeoar" method="post" id="my-form">
+                    <div> 
+                        <label for="full-name">Full Name</label>
+                        <input id="full-name" type="text" name="Name" placeholder="John Smith" 
+                          required>
+                    </div>
+                   
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" name="subject" placeholder="Subject"
+                        required>
+                    </div>
+
+                   
+                    <div>
+                        <label for="email">Email address</label>
                     <input id="email" type="email" placeholder="me@example.com"
                     required>
-                    <!-- </div> -->
+                    </div>
+
                     
-                    <!-- <div> -->
-                      <label>Message</label>
-                    <textarea class="input-field" name="Message"placeholder="Message"></textarea>
-                    <!-- </div> -->
-                    
+                        
+                    <div>
+                        <label>Message</label>
+                        <textarea class="input-field" 
+                        name="Message"placeholder="Message"></textarea>
+                    </div>
+                   
+                   
                     
                     <button type="submit" class="btn btn-form">Send</button>
                 </form>
+                
             </div>
            
+            <!-- Submition Succesful
+                <ion-icon class="submited-icon"name="checkmark-circle"></ion-icon> -->
+            <div id="my-form-status">
+                <p id="sb">Submited
+                    <a>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </a>
+                </p>
+                <p id="sbfailed">Failed Submition
+                    <a>
+                        <ion-icon name="alert"></ion-icon>
+                    </a>
+                </p>
+            </div>
             </div>
         </section>
          <!-- contact me section -->

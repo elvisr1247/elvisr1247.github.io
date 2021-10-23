@@ -337,16 +337,55 @@ border: none;
     /* padding: 1.2rem; */
     margin-top: 2.4rem;
     /* inherits current font-family */
-     font-family: inherit;
+    font-family: inherit;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); 
     background: #ffffff;
     color: #111;
+    text-align: center;
+    transition: .3s ease background-color;
 }
 .btn-form:hover{
     color: #ffffff;
     background: #111;
 }
 
+#my-form-status{
+    /* display: none; */
+    /* display: flex; */
+    padding: 1.0rem;
+    font-family: inherit;
+    font-size: 1.8rem;
+
+    /* new code */
+    width: 90%;
+    max-width: 50.0rem;
+    text-align: center;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#sb{
+    display: none;
+    margin-top: 2.4rem;
+   font-size: 1.8rem;
+}
+#sb a{
+    color: greenyellow;
+}
+#sbfailed{
+    display: none;
+    margin-top: 2.4rem;
+   font-size: 1.8rem;
+}
+#sbfailed a{
+  color: darkorange;
+}
 /*************************/
 /* CTA SECTION END*/
 /*************************/
