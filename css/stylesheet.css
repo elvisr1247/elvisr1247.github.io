@@ -219,6 +219,7 @@ body::-webkit-scrollbar-thumb:hover {
 .section-portfolio{
     color: #111;
     padding: 9.6rem 0; 
+    
     /* background-color: orangered;  */
 }
 .section-portfolio a, a:hover, a:focus, a:active {
@@ -239,6 +240,13 @@ body::-webkit-scrollbar-thumb:hover {
 .step-description{
     font-size: 1.8rem;
     line-height: 1.8;
+    /* text-shadow: 1px 1px #292929; */
+}
+.step-description p{
+    /* 414141 */
+     /* text-shadow: 1px 1px #292929; */
+     /* text-shadow: 1px 1px #414141; */
+
 }
 .port-a:hover,
 .port-a:active{
