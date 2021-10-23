@@ -73,12 +73,12 @@ async function handleSubmit(event) {
     }
   }).then(response => {
       document.getElementById("sb").style.display="inline";
-    status.innerHTML = "Thanks for your submission!";
+    // status.innerHTML = "Thanks for your submission!";
     form.reset()
   }).catch(error => {
    
     document.getElementById("sbfailed").style.display="inline";
-    status.innerHTML = "Oops! There was a problem submitting your form"
+    // status.innerHTML = "Oops! There was a problem submitting your form"
   });
 }
 form.addEventListener("submit", handleSubmit)

@@ -352,7 +352,7 @@ border: none;
 #my-form-status{
     /* display: none; */
     /* display: flex; */
-    padding: 1.0rem;
+    margin-top: 2.4rem;
     font-family: inherit;
     font-size: 1.8rem;
 
@@ -372,7 +372,7 @@ border: none;
 
 #sb{
     display: none;
-    margin-top: 2.4rem;
+   
    font-size: 1.8rem;
 }
 #sb a{
