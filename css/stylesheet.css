@@ -205,10 +205,36 @@ body::-webkit-scrollbar-thumb:hover {
     
     /* background-color: #cccccc; */
     color: #fff;
+    
 }
-.start span{
+
+.start-text{
+    display: flex;
+    padding: 18.0rem;
+    font-size: 5.0rem;
+}
+.start-text h1{
+    color: #ffffff;
+    font-size: 50px;
+    margin-bottom: 2.4rem;
+}
+.start-text p{
+    margin-bottom: 2.4rem;
+    font-size: 2.0rem;
+}
+.start-text a{
+    margin-bottom: 2.4rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #1a4473;
+}
+
+.start-text a:hover,
+.start-text a:active{
+    background-color: #ffffff;
     color: #1a4473;
 }
+
 /*************************/
 /* PAGE START SECTION END*/
 /*************************/
