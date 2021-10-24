@@ -82,3 +82,30 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
+
+/////////////////////////////////////////////////////////////
+//Stickey nav
+
+const sectionStart = document.querySelector(".section-start")
+
+const obs = new IntersectionObserver(function(entries) {
+  const ent = entries[0];
+
+  console.log(ent);
+
+  //if ent is false do this
+  if(!ent.isIntersecting){
+    document.body.classList.add('sticky-nav');
+  }
+ //if true do this
+  if(ent.isIntersecting){
+    document.body.classList.remove('sticky-nav');
+  }
+},{
+  //in the viewport
+  root:null,
+  threshold:0,
+  rootMargin: '-70px'
+});
+//observes the start section
+obs.observe(sectionStart);
