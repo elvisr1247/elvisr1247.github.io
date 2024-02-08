@@ -1,0 +1,275 @@
+/* used to make website 
+adapted with small devices
+don't use pixles */
+/* rem and em do NOT  depend on html font-size 
+in media queries! Intead,1 rem = 1em = 16px*/
+
+
+/*************************/
+/* BELOW 1344px(smaller desktops)*/
+/*************************/
+/* @media(max-width:84em){
+
+} */
+
+/*************************/
+/* MOBILE DEVICES START*/
+/*************************/
+
+/*************************/
+/* BELOW 1200px(Landscape Tablets) START*/
+/*************************/
+@media (max-width:75em){
+    html{
+        font-size: 56.25%;
+    }
+    .grid{
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+    .heading-primary{
+        font-size:4.4rem;
+    }
+    .heading-secondary{
+        font-size: 3.6rem;
+    }
+    .heading-tertiary{
+        font-size: 2.4rem;
+    }
+    .main-nav-list{
+        gap: 3.2rem;
+    }
+}
+/*************************/
+/* BELOW 1200px(Landscape Tablets) END*/
+/*************************/
+
+/*************************/
+/* BELOW 944px(Portrait Tablets) START*/
+/*************************/
+@media (max-width:59em){
+    html{
+        /* 8px/16px=0.5=50% */
+        font-size: 50%;
+    }
+    .Project-number{
+        font-size:7.4rem;
+    }
+
+    /* MOBILE NAVIGATION */
+    .btn-mobile-nav{
+        display: block;
+        z-index: 1000;
+    }
+    
+    .main-nav{
+        /* background-color: brown; */
+        background-color: rgba(12, 11, 11, 0.87);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+
+        /* Hide nav */
+        /* displa:none; doesnt allow transitions */
+        /* display: none; */
+
+        /* Hide visually */
+        opacity: 0;
+
+        /* make it unacessible to mouse and keyboard */
+        pointer-events: none;
+
+        /* hide it from screen readers */
+        visibility: hidden;
+    }
+    .nav--open .main-nav{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .nav--open .icon-mobile-nav[name="close"]{
+        display: block;
+    }
+    .nav--open .icon-mobile-nav[name="menu"]{
+        display: none;
+    }
+    .main-nav-list{
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+    .main-nav-link:link,
+    .main-nav-link:visited{
+        font-size: 3rem;
+    }
+    /* MOBILE NAVIGATION */
+}
+
+
+
+/*************************/
+/* BELOW 1200px(Portrait Tablets) END*/
+/*************************/
+
+
+/*************************/
+/* BELOW 704pxpx(Small Tablets) START*/
+/*************************/
+
+@media(max-width:44em) {
+    .header{
+        padding: 0 2.4rem;
+    }
+    .heading-secondary{
+        margin-bottom: 4.8rem;
+
+    }
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-cta h4:before {
+        content: "";
+        display: block;
+        width: 15rem;
+        height: 0.5rem;
+        background: #ffffff;
+        left: 2.5rem;
+        top: 50%;
+        position: absolute;
+      }
+      .section-cta h4:after {
+        content: "";
+        display: block;
+        width: 15rem;
+        height: 0.5rem;
+        background: #ffffff;
+        right: 2.5rem;
+        top: 50%;
+        position: absolute;
+      }
+}
+
+/*************************/
+/*  BELOW 704pxpx(Small Tablets) END*/
+/*************************/
+
+
+
+/*************************/
+/* BELOW 544px(Phones) START*/
+/*************************/
+@media(max-width:34em){
+    .header{
+        padding: 0 2rem;
+    }
+    .grid{
+        row-gap: 4.8rem;
+    }
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited{
+        padding: 2.4rem 1.6rem;
+    }
+    .step-img-box:nth-child(2){
+        grid-row: 1;
+    }
+    .step-img-box:nth-child(6){
+        grid-row: 5;
+    }
+    .step-img-box{
+        /* easeast way to move elements 
+        without messing up other elements */
+        transform: translate(2.4rem);
+    }
+    /* .start{
+        color: red;
+    } */
+   
+    .section-cta h4:before {
+        content: "";
+        display: block;
+        width: 10rem;
+        height: 0.5rem;
+        background: #ffffff;
+        left: 2.5rem;
+        top: 50%;
+        position: absolute;
+    }
+    .section-cta h4:after {
+        content: "";
+        display: block;
+        width: 10rem;
+        height: 0.5rem;
+        background: #ffffff;
+        right: 2.5rem;
+        top: 50%;
+        position: absolute;
+    }
+
+}
+
+/*************************/
+/* BELOW 550px(Phones) END*/
+/*************************/
+
+/*************************/
+/* BELOW 352px(Phones) START*/
+/*************************/
+@media(max-width:22em){
+    
+    .start{
+        padding: 0;
+    }
+
+    .start-text h1,
+    .start-text p,
+    .start-text a{
+        /* margin: 0; */
+        font-size: 2.0rem;
+    }
+
+    .section-cta h4:before {
+        content: "";
+        display: block;
+        width: 8rem;
+        height: 0.5rem;
+        background: #ffffff;
+        left: 2.5rem;
+        top: 50%;
+        position: absolute;
+    }
+    .section-cta h4:after {
+        content: "";
+        display: block;
+        width: 8rem;
+        height: 0.5rem;
+        background: #ffffff;
+        right: 2.5rem;
+        top: 50%;
+        position: absolute;
+    }
+}
+
+/*************************/
+/* BELOW 352px(Phones) END*/
+/*************************/
+
+
+/*************************/
+/* MOBILE DEVICES END*/
+/*************************/
